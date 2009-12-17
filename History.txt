@@ -1,4 +1,5 @@
 === 0.0.1 2009-12-17
 
-* 1 major enhancement:
-  * Initial release
+* Initial Release
+  * Can use the Cafepress Search API (http://api.cafepress.com/product.search.cp)
+    to find designs and products.

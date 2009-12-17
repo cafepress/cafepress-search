@@ -11,9 +11,9 @@ describe Cafepress::Search::Client do
     @client = Cafepress::Search::Client.new('application key')
   end
 
-  describe "#query" do
+  describe "#serch" do
     context "when the http interaction succeeds" do
-      it "should request base_url/query.xml" do
+      it "should request the appropriate search url" do
         query_url = 'http://example.com/product.search.cp?appKey=application%20key&query=dog'
         Net::HTTP.should_receive(:get).once.with(URI.parse(query_url)).and_return(@result_xml)
         @client.search('dog')

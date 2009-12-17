@@ -4,15 +4,37 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
+A client library for the Cafepress search API that allows you to search for
+designs and products on Cafepress.com
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Search for designs by keyword
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  require 'cafepress-search'
+
+  #Search for truth
+  client = Cafepress::Search::Client.new('you-cafepress-api-key')
+  result_set = client.search('truth')
+
+  result_set.results.each do |result|
+    puts result.:design_detail_page_url
+  end
+
+  #Search for the one truth
+  result_set = client.search('truth', :results_per_page => 1)
+
+  #That didn't work out.  Maybe truth lives on the second page.
+  result_set = client.search('truth', :results_per_page => 25, :page_number => 2)
+
+Available search options:
+
+* :results_per_page - How many results to retrieve
+* :page_number - What page of results to retrieve
+* :sort - Acceptable values: by_date_desc, by_score_desc
+* :max_products_per_design - The number of products ot include with each design result.
 
 == REQUIREMENTS:
 
