@@ -1,6 +1,6 @@
 = cafepress-search-client
 
-* http://github.com/cafepress/cafepress-search-client
+* http://github.com/cafepress/cafepress-search
 
 == DESCRIPTION:
 
