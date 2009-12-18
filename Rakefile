@@ -10,7 +10,7 @@ $hoe = Hoe.spec 'cafepress-search' do
   self.developer 'Britt Crawford', 'bcrawford@cafepress.com'
   self.developer 'Dimple Joseph', 'djoseph@cafepress.com'
   self.post_install_message = 'PostInstall.txt' 
-  self.extra_deps         = ["happymapper", "0.3.0"]
+  self.extra_deps         = [["happymapper", "0.3.0"]]
 end
 
 require 'newgem/tasks'

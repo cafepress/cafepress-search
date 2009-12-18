@@ -8,7 +8,7 @@ require 'cafepress/search/client'
 
 module Cafepress
   module Search
-    VERSION = '1.0.0'
+    VERSION = '1.0.1'
 
     Client.base_url = "http://api.cafepress.com"
   end
