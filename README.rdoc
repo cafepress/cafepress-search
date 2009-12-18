@@ -20,7 +20,7 @@ designs and products on Cafepress.com
   result_set = client.search('truth')
 
   result_set.results.each do |result|
-    puts result.:design_detail_page_url
+    puts result.design_detail_page_url
   end
 
   #Search for the one truth
