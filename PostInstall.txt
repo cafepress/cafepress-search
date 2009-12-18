@@ -1,4 +1,0 @@
-
-For more information on the cafepress-search gem, see http://github.com/cafepress/cafepress-search
-
-
