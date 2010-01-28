@@ -14,15 +14,15 @@ describe Cafepress::Search::SearchResult do
   end
 
   it "should have a design_url" do
-    @result.design_url.should == 'http://images.cafepress.com/image/34016862_125x125.jpg'
+    @result.design_url.should == 'http://images.cafepress.com/image/13012560_125x125.jpg'
   end
 
   it "should have a design_detail_page_url" do
-    @result.design_detail_page_url.should == 'http://www.cafepress.com/buy/dog/-/pv_design_details/pg_1/id_34016862/hlv_1'
+    @result.design_detail_page_url.should == 'http://www.cafepress.com/buy/dog/-/pv_design_details/pg_1/id_13012560/hlv_1'
   end
 
   it "should have a design_id" do
-    @result.design_id.should == 34016862
+    @result.design_id.should == 13012560
   end
 
   it "should have products" do

@@ -9,6 +9,7 @@ $hoe = Hoe.spec 'cafepress-search' do
   self.version = Cafepress::Search::VERSION
   self.developer 'Britt Crawford', 'bcrawford@cafepress.com'
   self.developer 'Dimple Joseph', 'djoseph@cafepress.com'
+  self.developer 'Rebecca McInerney', 'rmcinerney@cafepress.com'
   self.extra_deps         = [["happymapper", "0.3.0"]]
 end
 

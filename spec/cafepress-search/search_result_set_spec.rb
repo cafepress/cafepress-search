@@ -22,11 +22,11 @@ describe Cafepress::Search::SearchResultSet do
   end
   
   it "should know the total number of designs for this query" do
-    @results.total_designs.should == 553352
+    @results.total_designs.should == 519187
   end
 
   it "should know the total number of products for this query" do
-    @results.total_products.should == 17744462
+    @results.total_products.should == 16153172
   end
   
   it "should load the starting result index" do
@@ -45,10 +45,10 @@ describe Cafepress::Search::SearchResultSet do
       'puppy',
       'gifts',
       'animals',
-      'art',
       'breeds',
-      'breed',
-      'humor'
+      'art',
+      'humor',
+      'purebred'
     ]
   end
   
