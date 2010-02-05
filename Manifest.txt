@@ -1,6 +1,5 @@
 History.txt
 Manifest.txt
-PostInstall.txt
 README.rdoc
 Rakefile
 lib/cafepress-search.rb
@@ -18,4 +17,3 @@ spec/cafepress-search/search_result_spec.rb
 spec/data/dog_search.xml
 spec/spec.opts
 spec/spec_helper.rb
-tasks/rspec.rake

@@ -13,20 +13,24 @@ module Cafepress
       attribute :start_index, Integer, :tag => 'startResult'
       attribute :sort, String
 
-      element :subtopics, String
-      element :searchQuery, String
+      element :raw_subtopics, String, :tag => 'subtopics'
+      element :search_query, String, :tag => 'searchQuery'
     
       has_many :results, SearchResult
-    
-      def topics
-        @topics ||= subtopics.split("\n").inject([]) do |groomed, topic|
+          
+      def subtopics
+        @topics ||= raw_subtopics.split("\n").inject([]) do |groomed, topic|
           groomed << topic.strip unless topic.strip == ""
           groomed
         end
       end
+      
+      def topics
+        subtopics
+      end
 
       def query
-        @query ||= searchQuery.strip
+        @query ||= search_query.strip
       end
     end
   end
